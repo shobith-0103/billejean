@@ -6,7 +6,7 @@ pipeline {
             steps {
                 sh 'echo This is running from Jenkinsfile'
                 sh 'whoami'
-                sh 'hostname'
+                sh 'netstat'
             }
         }
     }
