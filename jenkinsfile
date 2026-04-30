@@ -1,0 +1,13 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Run from Git') {
+            steps {
+                sh 'echo This is running from Jenkinsfile'
+                sh 'whoami'
+                sh 'hostname'
+            }
+        }
+    }
+}
